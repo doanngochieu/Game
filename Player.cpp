@@ -164,10 +164,10 @@ void Player::move(int dX, int dY)
 }
 void Player::setScore(unsigned int score)
 {
-	if (score == -1)
+    if (score < 0)
 		_score = 0;
 	else
-		_score += score;
+        _score += score;
 }
 void Player::setMadMode(bool value)
 {
@@ -278,10 +278,15 @@ void Player::setColor()
 }
 bool Player::playersCollision(int id)
 {
-	Player* otherPlayer = _game->getState()->getPlayer(id);
-	if (_game->getState()->isColliding(this, otherPlayer))
-		return true;
-
-	return false;
+    Player* otherPlayer = _game->getState()->getPlayer(id);
+    if (_game->getState()->isColliding(this, otherPlayer))
+    {
+        if(this->getScore() > otherPlayer->getScore()){
+            _game->getState()->setEndMode(1, EndMode::GOT_EATEN_MODE);
+        } else if(this->getScore() < otherPlayer->getScore()) {
+            _game->getState()->setEndMode(2, EndMode::GOT_EATEN_MODE);
+        }
+        return true;
+    }
+    return false;
 }
-
