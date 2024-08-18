@@ -7,7 +7,7 @@ a 2-player 2D game created in SDL for Windows.
 
 | Entity        | Effects                        |
 | ------------- | ------------------------------ |
-| Rose          | Lose game                      |![Ingame](Textures/flower01.png)
+| Rose          | Lose game                      |
 | Carrot        | Score 1 Point                  |
 |               | Increase enemy speed           |
 | Green flower  | Get poisoned                   |
