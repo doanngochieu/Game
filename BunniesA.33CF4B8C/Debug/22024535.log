@@ -1,0 +1,35 @@
+﻿Player.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Carrot.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Flower.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Font.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Level.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Font.obj : error LNK2019: unresolved external symbol _SDL_SetTextureColorMod referenced in function "public: void __thiscall Font::resetColor(void)" (?resetColor@Font@@QAEXXZ)
+Level.obj : error LNK2001: unresolved external symbol _SDL_SetTextureColorMod
+Player.obj : error LNK2001: unresolved external symbol _SDL_SetTextureColorMod
+Game.obj : error LNK2019: unresolved external symbol _SDL_PollEvent referenced in function "private: void __thiscall Game::update(void)" (?update@Game@@AAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol _SDL_RenderClear referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
+State_Gameplay.obj : error LNK2001: unresolved external symbol _SDL_RenderClear
+Game.obj : error LNK2019: unresolved external symbol _SDL_RenderPresent referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
+State_Gameplay.obj : error LNK2001: unresolved external symbol _SDL_RenderPresent
+Game.obj : error LNK2019: unresolved external symbol _SDL_GetTicks referenced in function "private: void __thiscall Game::update(void)" (?update@Game@@AAEXXZ)
+Timer.obj : error LNK2001: unresolved external symbol _SDL_GetTicks
+Game.obj : error LNK2019: unresolved external symbol _SDL_Quit referenced in function "private: void __thiscall Game::quit(void)" (?quit@Game@@AAEXXZ)
+State_End.obj : error LNK2019: unresolved external symbol _SDL_SetRenderDrawColor referenced in function "public: virtual void __thiscall State_End::Update(float)" (?Update@State_End@@UAEXM@Z)
+State_Gameplay.obj : error LNK2001: unresolved external symbol _SDL_SetRenderDrawColor
+Window.obj : error LNK2001: unresolved external symbol _SDL_SetRenderDrawColor
+ResourceManager.obj : error LNK2019: unresolved external symbol _SDL_DestroyTexture referenced in function "public: __thiscall ResourceManager::~ResourceManager(void)" (??1ResourceManager@@QAE@XZ)
+ResourceManager.obj : error LNK2019: unresolved external symbol _IMG_LoadTexture referenced in function "public: void __thiscall ResourceManager::loadTexture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?loadTexture@ResourceManager@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+State_Gameplay.obj : error LNK2019: unresolved external symbol _SDL_GetKeyboardState referenced in function "public: virtual void __thiscall State_Gameplay::Update(float)" (?Update@State_Gameplay@@UAEXM@Z)
+State_Menu.obj : error LNK2001: unresolved external symbol _SDL_GetKeyboardState
+State_Gameplay.obj : error LNK2019: unresolved external symbol _SDL_Delay referenced in function "private: void __thiscall State_Gameplay::theEnd(void)" (?theEnd@State_Gameplay@@AAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_GetError referenced in function "public: bool __thiscall Window::init(void)" (?init@Window@@QAE_NXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_CreateWindow referenced in function "public: bool __thiscall Window::init(void)" (?init@Window@@QAE_NXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_DestroyWindow referenced in function "public: void __thiscall Window::quit(void)" (?quit@Window@@QAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_ShowCursor referenced in function "public: bool __thiscall Window::init(void)" (?init@Window@@QAE_NXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_CreateRenderer referenced in function "public: bool __thiscall Window::init(void)" (?init@Window@@QAE_NXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_DestroyRenderer referenced in function "public: void __thiscall Window::quit(void)" (?quit@Window@@QAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_Init referenced in function "public: bool __thiscall Window::init(void)" (?init@Window@@QAE_NXZ)
+MSVCRT.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ)
+D:\SDL2\lib\x64\SDL2.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\SDL2\lib\x64\SDL2_image.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\84976\Downloads\BunnyCarot_SDL2\SDL2\Debug\BunniesAndCarrots.exe : fatal error LNK1120: 20 unresolved externals
